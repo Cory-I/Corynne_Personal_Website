@@ -71,7 +71,7 @@ p {
   grid-row: 2;
   grid-column: 1;
   display: block;
-  padding-top: 06rem;
+  padding-top: 0rem;
   width: 22vw;
 }
 .content .text {
