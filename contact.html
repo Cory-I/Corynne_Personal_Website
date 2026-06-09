@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
     <!--Contact Page-->
-    <title>Document</title>
+    <title>Contact</title>
   </head>
   <body>
     <header>
@@ -23,37 +24,29 @@
     <main>
       <div class="content">
         <div class="title">
-          <h2>A Little Bit About Me</h2>
+          <h2>Mailbox</h2>
         </div>
         <div class="img">
-          <img src="Images/about_img.JPG" alt="picture of Corynne" />
+          <img src="Images/Mailbox.jpeg" alt="an image of a pink postbox" />
         </div>
         <div class="text">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.Lorem ipsum dolor sit amet,consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut
-          </p>
+          <p>Add your info here to get in contact!</p>
+        </div>
+          <form action="./response.html">
+            <div class="field1">
+              <label for="Name"> Name:</label>
+              <input type="text" name="Name" placeholder="What is your name?" />
+             </div>
+              <div class="field2">
+                <label for="Email"> Email:</label>
+                <input type="email" name="Email" placeholder="What is your email?" />
+              </div>
+              <div class="field3">
+              <label for="Message"> Message:</label>
+                  <input type="text" name="Message" placeholder="What do you want to say?"/>
+              </div>
+            <input type="submit" value="Submit Form" />
+          </form>
         </div>
       </div>
     </main>

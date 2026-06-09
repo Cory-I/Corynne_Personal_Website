@@ -30,9 +30,6 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-img {
-  width: 150rem;
-}
 .header a {
   padding: 1rem;
   font-size: 4em;
@@ -50,31 +47,42 @@ img {
   font-size: 6em;
   padding-left: 6rem;
 }
-.aboutCard {
+.content {
   color: #3d3d3d;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  padding: 1.5rem;
-  margin: auto;
-  align-items: start;
+  grid-template-rows: 1fr auto-fill auto-fill;
+  justify-content: space-evenly;
+  padding: 3rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  align-items: bottom;
   justify-items: center;
-  width: 100%;
-  row-gap: 1.5rem;
 }
-.aboutCard .cardHeader {
+.content .title {
   background-color: #ffc0cb;
   grid-column: 1;
   grid-row: 1;
-  justify-content: center;
-  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.35vw;
+  align-content: start;
   padding-left: 6rem;
   padding-right: 6rem;
 }
-.cardImg {
-  display: block;
-  align-items: center;
-  height: fit-content;
+img {
+  width: 100rem;
+  margin: 4rem;
+}
+.content .text {
+  grid-row: 3;
+  grid-column: 1;
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-items: right;
+  max-width: 100%;
+  min-width: 60%;
 }
 footer {
   color: #3d3d3d;
@@ -92,14 +100,13 @@ footer {
   width: 100%;
 }
 @media (max-width: 768px) {
-  .aboutCard {
+  .content {
     grid-template-columns: auto;
     grid-template-rows: auto 2fr auto;
     padding: 1rem;
     margin: 1rem;
-    width: inherit;
   }
-  .aboutCard .cardHeader {
+  .content .title {
     background-color: #ffc0cb;
     display: flex;
     grid-column: 1;
@@ -110,14 +117,14 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .aboutCard .cardImg img {
+  .content .img img {
     grid-row: 2;
     grid-column: 1;
     display: block;
     padding: 0.25rem;
-    max-width: 10rem;
+    width: 15rem;
   }
-  .aboutCard .cardText {
+  .content .text {
     grid-row: 3;
     grid-column: 1;
     padding: 0;
@@ -176,5 +183,10 @@ footer {
     font-size: 0.85rem;
     text-decoration: none;
     color: #ff305d;
+  }
+  img {
+    width: 10rem;
+    margin: 0.25rem;
+    margin-bottom: 17rem;
   }
 }
